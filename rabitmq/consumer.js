@@ -26,7 +26,6 @@ amqp.connect(process.env.RABBITMQ_URI, function (error0, connection) {
 			function (msg) {
 				let parsedMsg = JSON.parse(msg.content.toString());
 				console.log(" [x] User data : ", parsedMsg);
-
 				// send the verification link to the user email associated asynchronysly
 				sendVerificationEmail(
 					parsedMsg.firstName,

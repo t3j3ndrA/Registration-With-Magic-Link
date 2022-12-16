@@ -2,7 +2,7 @@ import getVerificationLink from "./getVerificationLink.js";
 import env from "dotenv";
 env.config();
 const generateEmailTemplate = (firstName, lastName, email) => {
-	const verificationLink = getVerificationLink(email);
+	const verificationLink = getVerificationLink(firstName, lastName, email);
 	return `
 	<body style="background-color:rgb(230, 230, 230); padding : 10px;">
 	<h2 style="color:rgb(30, 75, 83); text-align: center; ">
