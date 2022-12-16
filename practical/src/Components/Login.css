@@ -1,0 +1,22 @@
+input{
+    border-radius: 5px;
+  }
+  
+  form{ 
+  width: 25%;
+  margin-left : 37%;
+  border-radius: 15px;
+  }
+  
+  .form_wrapper{
+    flex-direction: column;
+    margin-top: 15%;
+  }
+  
+  input{
+    height: 40px; font-size: large;
+  }
+
+  .input span{
+    cursor: pointer;
+  }
