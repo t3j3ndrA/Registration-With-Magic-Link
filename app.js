@@ -17,7 +17,11 @@ import user from "./routes/user/user.js";
 const port = process.env.PORT | 5000;
 
 app.use(bodyParser.json());
-app.use(cors());
+app.use(
+	cors({
+		origin: [process.env.CLIENT_BASE_URL],
+	})
+);
 app.use(express.json());
 
 // middlewares
