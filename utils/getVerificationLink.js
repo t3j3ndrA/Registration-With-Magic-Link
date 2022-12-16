@@ -9,7 +9,7 @@ const getVerificationLink = (firstName, lastName, email) => {
 		expiresIn,
 	});
 
-	return `${process.env.BASE_URL}/user/verify-user?token=${token}`;
+	return `${process.env.BASE_URL}/api/v1/user/verify-user?token=${token}`;
 };
 
 export default getVerificationLink;
